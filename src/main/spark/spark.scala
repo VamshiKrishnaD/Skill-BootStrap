@@ -2,9 +2,6 @@
 
 /usr/share/spark-tgt-2.3.1.tgt.17/jars
 
---principal Z002NLP@BIGRED.TARGET.COM \
---keytab /home_dir/z002nlp/Z002NLP.keytab \
-
 /usr/local/bin/spark-submit-2.3 --class com.target.loyalty.LoyaltyAccountSummary \
 --conf spark.driver.maxResultSize=10G \
 --conf spark.driver.memory=12g \
@@ -20,7 +17,7 @@
 --queue SVMKGTHDP \
 --executor-cores 5 \
 --executor-memory 24G \
---master yarn /home_dir/z002nlp/Target-Circle.jar prz_innovation
+--master yarn /home_dir/zxxxx/Target-Circle.jar prz_innovation
 
 /usr/local/bin/
 
@@ -118,4 +115,4 @@ spark.yarn.am.extraJavaOptions
 --queue default \
 --executor-cores 5 \
 --executor-memory 24G \
---master yarn /home_dir/z002nlp/spark/Target-Circle.jar prz_innovation
+--master yarn /home_dir/zxxxx/spark/Target-Circle.jar prz_innovation
